@@ -3,21 +3,27 @@ import time
 from alcsat import L_OP
 from spell.structures import structure_from_owl
 from spell.fitting_alc import FittingALC
+import sys, os
 
 
 def main():
+    sml_path = sys.argv[1]
     runs = 3
     benchmarks = ["mammographic", "suramin", "mutagenesis"]
     max_k = 8
     intervals = [0, 2, 5, 10, 20, 1000]
     outfile = "reproduce-table2.txt"
+    
 
     with open(outfile, mode="w") as outfile:
         _ = outfile.write("bench, intervals, accuracy, time\n")
         for benchmark in benchmarks:
-            A = structure_from_owl(f"../sml-benchmarks/{benchmark}/{benchmark}.owl")
-            pospath = f"../sml-benchmarks/{benchmark}/full/pos.txt"
-            negpath = f"../sml-benchmarks/{benchmark}/full/neg.txt"
+            exs_folder = '1'
+            if benchmark == "mutagenesis":
+                exs_folder = '42'
+            A = structure_from_owl(os.path.join(sml_path, 'learningtasks', benchmark, 'owl', 'data', f'{benchmark}.owl'))
+            pospath = os.path.join(sml_path, 'learningtasks', benchmark, 'owl', 'lp', exs_folder, 'pos.txt')
+            negpath = os.path.join(sml_path, 'learningtasks', benchmark,'owl', 'lp', exs_folder, 'neg.txt')
 
             P: list[int] = []
             with open(pospath, encoding="UTF-8") as file:

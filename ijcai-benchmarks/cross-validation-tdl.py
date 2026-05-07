@@ -15,6 +15,7 @@ import random
 from spell.instance import Instance, OP
 import numpy as np
 from alc_benchmarks.ontolearn_benchmark import owl_concept_size
+import os
 
 def size(concept) -> int:
     rd = ManchesterOWLSyntaxOWLObjectRenderer()
@@ -37,7 +38,7 @@ def accuracy(individuals, pos, neg):
     return (tp + tn) / (len(pos) + len(neg))
 
 
-def sml_benchmark_cross_validate(resultpath: str):
+def sml_benchmark_cross_validate(resultpath: str, sml_path):
     with open(resultpath, mode="w") as outfile:
         _ = outfile.write("bench, fold, acc, f1, size, evo_size, concept\n")
         for bench in [
@@ -51,9 +52,12 @@ def sml_benchmark_cross_validate(resultpath: str):
             "pyrimidine"#,
             #"suramin"
         ]:
-            owlfile = f"../sml-benchmarks/{bench}/{bench}.owl"
-            pos_path = f"../sml-benchmarks/{bench}/full/pos.txt"
-            neg_path = f"../sml-benchmarks/{bench}/full/neg.txt"
+            exs_folder = '1'
+            if bench == "mutagenesis":
+                exs_folder = '42'
+            owlfile = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'data', f'{bench}.owl')
+            pospath = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'lp', exs_folder, 'pos.txt')
+            negpath = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'lp', exs_folder, 'neg.txt')
 
             kb = KnowledgeBase(path=owlfile)
 
@@ -163,7 +167,7 @@ def sml_benchmark_cross_validate(resultpath: str):
 
 
 def main():
-    sml_benchmark_cross_validate("reproduce-table1-tdl.txt")
+    sml_benchmark_cross_validate("reproduce-table1-tdl.txt", sys.argv[1])
 
 
 if __name__ == "__main__":

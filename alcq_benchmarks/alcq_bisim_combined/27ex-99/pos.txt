@@ -1,0 +1,13 @@
+http://yago-knowledge.org/resource/Elizabeth_of_Bavaria_u002C__Duchess_of_Austria
+http://yago-knowledge.org/resource/Linda_Harrison
+http://yago-knowledge.org/resource/Mary_Sue_Hubbard
+http://yago-knowledge.org/resource/Wang_Guangmei
+http://yago-knowledge.org/resource/Kreka
+http://yago-knowledge.org/resource/Boris_Andreevich_Golitsyn
+http://yago-knowledge.org/resource/Shashi_Kapoor
+http://yago-knowledge.org/resource/Walter_Mondale
+http://yago-knowledge.org/resource/Edwin_Lutyens
+http://yago-knowledge.org/resource/Arnold_Schwarzenegger
+http://yago-knowledge.org/resource/Wilhelm_Karl_u002C__Duke_of_Urach
+http://yago-knowledge.org/resource/Owain_Glyndŵr
+http://yago-knowledge.org/resource/Milton_Shulman

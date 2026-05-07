@@ -651,7 +651,7 @@ def examples_from_bisim_run(dir_path, overwrite_all = False):
     for d in filter(lambda s : not s.startswith(".") and os.path.isdir(os.path.join(dir_path,s)) ,os.listdir(dir_path)):   
         json_path = os.path.join(dir_path, d, "results.json")
         jd = dict()
-        if os.path.exists(json_path) and not overwrite_all:
+        if os.path.exists(json_path):
             with open(json_path, 'r') as f:
                 jd = json.load(f)
 
@@ -672,8 +672,8 @@ def examples_from_bisim_run(dir_path, overwrite_all = False):
             a, c, c_size, f1 = run_evo(kb_path,P,N, timeout=300, card_limit=3, f1 = True)
             end = time.time()
             jd["Evolearner"] = {"concept" : c, "size" : c_size, "accuracy" : a, "time" : end-start, "f1" : f1}
-            # f1, _,_ = run_evo(kb_path,P,N, timeout=300, card_limit=3, f1 = True)
-            # jd["Evolearner"] = {"concept" : c, "size" : c_size, "accuracy" : a, "time" : end-start, "f1" : f1 }
+            _, _,_, f1 = run_evo(kb_path,P,N, timeout=300, card_limit=3, f1 = True)
+            jd["Evolearner"] = {"concept" : c, "size" : c_size, "accuracy" : a, "time" : end-start, "f1" : f1}
         
         if not "ALCSAT" in jd.keys() or overwrite_all:
             start = time.time()
@@ -884,9 +884,9 @@ def combine_bisim_examples2(kb_path,dir_path, dest_dir, max_per_size = 5):
 
 
 def main():
-    #dir_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "alcq_bisim_combined")
-    examples_from_bisim_run(sys.argv[1], overwrite_all=False)
-    alcq_benchmarks_to_csv(sys.argv[1])    
+    dir_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),"alcq_benchmarks", "alcq_bisim_combined")
+    examples_from_bisim_run(dir_path)
+    alcq_benchmarks_to_csv(dir_path)    
 
 if __name__ == "__main__":
     main()

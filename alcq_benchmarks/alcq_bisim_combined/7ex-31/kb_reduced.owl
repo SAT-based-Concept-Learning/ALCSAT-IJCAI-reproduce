@@ -1,0 +1,188 @@
+<?xml version="1.0"?> 
+ <rdf:RDF     xmlns="http://www.w3.org/2002/07/owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:shacl="http://www.w3.org/ns/shacl#"
+    xmlns:schema="http://schema.org/"
+    xmlns:schema1="http://yago-knowledge.org/schema#"
+>
+<owl:Ontology rdf:about="http://www.w3.org/2002/07/owl"/>
+<owl:Class rdf:about="http://yago-knowledge.org/resource/Female__u0028_gender_u0029__class"/>
+<owl:Class rdf:about="http://yago-knowledge.org/resource/Male_gender_class"/>
+<owl:ObjectProperty rdf:about="http://schema.org/children"/>
+<owl:ObjectProperty rdf:about="http://schema.org/gender"/>
+<owl:ObjectProperty rdf:about="http://schema.org/spouse"/>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_">
+    <rdf:type rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029__class"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Male_gender">
+    <rdf:type rdf:resource="http://yago-knowledge.org/resource/Male_gender_class"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Sonny_Chiba">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Yōko_Nogiwa"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mackenyu"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Gordon_Maeda"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Juri_Manase"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Arthur_Lister">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Gulielma_Lister"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Joseph_Jackson_Lister__u0028_naturalist_u0029_"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Yōko_Nogiwa">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Juri_Manase"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Sonny_Chiba"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Gulielma_Lister">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Joseph_Jackson_Lister__u0028_naturalist_u0029_">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mackenyu">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Joanne_Woodward">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Melissa_Newman"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Nell_Newman"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Paul_Newman"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Melissa_Newman">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Nell_Newman">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Paul_Newman">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Joanne_Woodward"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Melissa_Newman"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Scott_Newman__u0028_actor_u0029_"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Nell_Newman"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Pier_Silvio_Berlusconi">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Laurance_Rockefeller">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Laurance_Rockefeller_Jr_u002E_"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Lucy_Rockefeller_Waletzky"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Laura_Rockefeller_Chasin"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Marion_Rockefeller_Weber"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Mary_French_Rockefeller"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Agnes_Syme_Lister">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Joseph_Lister"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Joseph_Lister">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Agnes_Syme_Lister"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Anson_Phelps_Stokes">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Isaac_Newton_Phelps_Stokes"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/James_Graham_Phelps_Stokes"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Anson_Phelps_Stokes__u0028_philanthropist_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Anson_Phelps_Stokes__u0028_philanthropist_u0029_">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Anson_Phelps_Stokes__u0028_bishop_u0029_"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Olivia_Stokes_Hatch"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Isaac_Newton_Phelps_Stokes">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Edith_Minturn_Stokes"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/James_Graham_Phelps_Stokes">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Rose_Pastor_Stokes"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Anson_Phelps_Stokes__u0028_bishop_u0029_">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Olivia_Stokes_Hatch">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Silvio_Berlusconi">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Veronica_Lario"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Barbara_Berlusconi"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Pier_Silvio_Berlusconi"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Marina_Berlusconi"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Veronica_Lario">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Silvio_Berlusconi"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Barbara_Berlusconi"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Scott_Newman__u0028_actor_u0029_">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Barbara_Berlusconi">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Juri_Manase">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Kyu_Kyu_Hla">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Min_Aung_Hlaing"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Khin_Thiri_Thet_Mon"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Min_Aung_Hlaing">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Aung_Pyae_Sone"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Kyu_Kyu_Hla"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Khin_Thiri_Thet_Mon"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Rose_Pastor_Stokes">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/James_Graham_Phelps_Stokes"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Laura_Rockefeller_Chasin">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Marina_Berlusconi">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Gordon_Maeda">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Joseph_Jackson_Lister">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Joseph_Lister"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Arthur_Lister"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Laurance_Rockefeller_Jr_u002E_">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Lucy_Rockefeller_Waletzky">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Marion_Rockefeller_Weber">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mary_French_Rockefeller">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Laurance_Rockefeller"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Lucy_Rockefeller_Waletzky"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Laura_Rockefeller_Chasin"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Marion_Rockefeller_Weber"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Khin_Thiri_Thet_Mon">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Aung_Pyae_Sone">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Edith_Minturn_Stokes">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Isaac_Newton_Phelps_Stokes"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+</rdf:RDF>

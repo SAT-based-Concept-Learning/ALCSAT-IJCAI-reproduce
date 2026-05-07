@@ -1,0 +1,11 @@
+http://yago-knowledge.org/resource/Ashur-uballit_I
+http://yago-knowledge.org/resource/Lucius_Valerius_Messalla__u0028_consul_214_u0029_
+http://yago-knowledge.org/resource/Gongyang_of_Goryeo
+http://yago-knowledge.org/resource/Nicholas_II_of_Russia
+http://yago-knowledge.org/resource/Ahmed_Khadr
+http://yago-knowledge.org/resource/Akbar_Hashemi_Rafsanjani
+http://yago-knowledge.org/resource/Albert_II_u002C__Prince_of_Monaco
+http://yago-knowledge.org/resource/George_Osmond
+http://yago-knowledge.org/resource/Robert_Maxwell
+http://yago-knowledge.org/resource/Basil_the_Elder
+http://yago-knowledge.org/resource/Sun_Myung_Moon

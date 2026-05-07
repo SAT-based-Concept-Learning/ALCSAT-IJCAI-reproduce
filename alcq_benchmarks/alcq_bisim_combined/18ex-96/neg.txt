@@ -1,0 +1,10 @@
+http://yago-knowledge.org/resource/John_Perowne
+http://yago-knowledge.org/resource/Rajendra_Narayan_Singh_Deo
+http://yago-knowledge.org/resource/Niall_mac_Cernaig_Sotal
+http://yago-knowledge.org/resource/Parakramabahu_VIII_of_Kotte
+http://yago-knowledge.org/resource/George_Barrington_u002C__5th_Viscount_Barrington
+http://yago-knowledge.org/resource/William_Wollaston
+http://yago-knowledge.org/resource/Chōsokabe_Kunichika
+http://yago-knowledge.org/resource/Charles_Cornwallis_u002C__4th_Baron_Cornwallis
+http://yago-knowledge.org/resource/Sir_Justinian_Isham_u002C__2nd_Baronet
+http://yago-knowledge.org/resource/Ecgberht_of_Kent

@@ -13,6 +13,7 @@ from spell.preprocessing import ThresholdMethod
 import random
 from spell.instance import Instance, OP
 import numpy as np
+import os
 
 
 def chunks(lst: list[int], n: int):
@@ -70,7 +71,7 @@ def kfold(
         yield (i, concept, acc2, f1)
 
 
-def sml_benchmark_cross_validate(resultpath: str, tm: ThresholdMethod):
+def sml_benchmark_cross_validate(resultpath: str, tm: ThresholdMethod, sml_path):
     with open(resultpath, mode="w") as outfile:
         _ = outfile.write("bench, fold, acc, f1, size, evo_size, concept\n")
         for bench in [
@@ -84,9 +85,12 @@ def sml_benchmark_cross_validate(resultpath: str, tm: ThresholdMethod):
             "pyrimidine"#,
             #"suramin"
         ]:
-            owlfile = f"../sml-benchmarks/{bench}/{bench}.owl"
-            pospath = f"../sml-benchmarks/{bench}/full/pos.txt"
-            negpath = f"../sml-benchmarks/{bench}/full/neg.txt"
+            exs_folder = '1'
+            if bench == "mutagenesis":
+                exs_folder = '42'
+            owlfile = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'data', f'{bench}.owl')
+            pospath = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'lp', exs_folder, 'pos.txt')
+            negpath = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'lp', exs_folder, 'neg.txt')  
 
             print("== Loading {}".format(owlfile))
             A = structure_from_owl(owlfile)
@@ -137,7 +141,7 @@ def sml_benchmark_cross_validate(resultpath: str, tm: ThresholdMethod):
 
 def main():
     sml_benchmark_cross_validate(
-        "reproduce-table1-therorem2", ThresholdMethod.INTERVALS
+        "reproduce-table1-therorem2", ThresholdMethod.INTERVALS, sys.argv[1]
     )
 
 if __name__ == "__main__":

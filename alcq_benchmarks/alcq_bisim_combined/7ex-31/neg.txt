@@ -1,0 +1,4 @@
+http://yago-knowledge.org/resource/Anson_Phelps_Stokes
+http://yago-knowledge.org/resource/Paul_Newman
+http://yago-knowledge.org/resource/Laurance_Rockefeller
+http://yago-knowledge.org/resource/Silvio_Berlusconi

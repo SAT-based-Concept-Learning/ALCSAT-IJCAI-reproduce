@@ -1,41 +1,39 @@
-This repository contains our implementation of bounded fitting for the description logic ALCQI(f) (ALCSAT). Given an instance of a learning problem in the form of a knowledge base, positive and negative examples, the tool searches for a description logic concept that covers all positive examples, excludes all negative examples and is of minimal size. Any syntactic fragment of the description logic ALC is supported as well as extensions of ALC with number restrictions, inverse roles and data values.
-
-As this is a Fork of <https://github.com/spell-system/SPELL>, it also contains SPELL, a tool to learn concepts in the description logic EL.
+This repository contains our implementation of bounded fitting for the description logic ALCQI(f) and instructions on how to reproduce the results from the paper.
 
 ## Requirements
 - Installation of Python 3
-- uv package manager obtainable from https://github.com/astral-sh/uv
+- uv package manager
+
+
+## SML-Benchmarks
+The SML-Benchmarks can be obtained from <https://github.com/SmartDataAnalytics/SML-Bench>. Note that in order to download the benchmark `premierleague` from GitHub, Git Large File Storage (LFS) is required. To reproduce results shown in Table 1 (or Table 4 in the appendix), run
+
+(row) Top: ``` uv run -m ijcai-benchmarks.cross-validation-top-bot  <path to sml benchmarks repository folder>```
+
+(row) EvoLearner: ``` uv run -m ijcai-benchmarks.cross-validation-evolearner <path to sml benchmarks repository folder> ```
+
+(row) TDL: ``` uv run -m ijcai-benchmarks.cross-validation-tdl <path to sml benchmarks repository folder> ```
+
+(row) Theorem 2: ``` uv run -m ijcai-benchmarks.bisim-extract <path to sml benchmarks repository folder> ```
+
+(row) Our Tool: ``` uv run -m ijcai-benchmarks.cross-validation-alcsat <path to sml benchmarks repository folder> ```
+
+For Table 2 run ``` uv run -m ijcai-benchmarks.intervals <path to sml benchmarks repository folder> ```
+
+For Table 3 run ``` uv run -m ijcai-benchmarks.bisimulation <path to sml benchmarks repository folder> ```
+
+In all these cases data files will be created, e.g. ```reproduce-table1-therorem2.txt```. These files contain all data from which results shown in the table were created. For Table 1, the actual values shown in the paper are the means and standard deviations computed from this data. By running ```uv run -m ijcai-benchmarks.process-cross-validation-output <path to one of the output files>``` the means and standard deviations are computed for the file given file and then printed in LaTeX-compatible code which was used directly to generate Table 1.
+
+For Table 5 (appendix) run ``` uv run -m ijcai-benchmarks.parallel ``` results will be shown in standard output.
+
+## YAGO ALCQ Benchmarks
+To reproduce results from Figure 1, run 
+
+``` uv run -m alc_benchmarks.alc_benchmark ```
+
+In each of the benchmarks in ```alcq_benchmarks/alcq_bisim_combined``` a file ```results.json``` will be created containing accuracies, f1 scores, concept sizes and concepts reported by the respective tools. In addition two files ```alcq_benchmarks/alcq_bisim_combined/data.csv``` and ```alcq_benchmarks/alcq_bisim_combined/data_avg.csv``` are created. The file ```alcq_benchmarks/alcq_bisim_combined/data_avg.csv``` contains the data points shown in Figure 1.
 
 
 ## Run
-For full instructions on how to run either ALCSAT of SPELL, run
-
+For full instructions on how to run our implementation, run
 `uv run spell_cli.py --help`
-
-The `--language` option can be used to choose a syntactic fragment of ALCQI(f). The following fragments are available.
-- `el`: exists, and (using SPELL, default)
-- `el`_alcsat: exists, and (using ALCSAT)
-- `fl0`: forall, and
-- `ex-or`: exists, or
-- `all-or`: forall, or
-- `elu`: exists, and, or 
-- `alc`:  forall, exists, and, or, neg
-- `alcq`: number restrictions, forall, exists, and, or, neg    
-    - when chosing alcq, the option `--max_q` becomes available to set the maximum values in number restrictions (defaults to 2)
-
-Further options influencing the language in which concepts are learned are:
-- `--inverse`: this is a flag that adds inverse roles to the language
-- `--feature_values`: this is a flag that adds feature values to the language
-    - when using this flag, the number of thresholds used to form feature values is set with the `--max_thresholds` option
-    
-
-The `--mode` options allows switching between exact mode and approximate mode.
-- `exact`: only consider exact fittings: concepts that cover all positive examples and exclude all negative examples
-- `neg_approx`: (SPELL only) search for an approximate fitting, that covers all positive examples but not necessarily excludes all negative examples
-- `full_approx`: search for an approximate fitting that may not cover some positive examples and may cover some negative examples (incremental search for fittings with increasing accuracy)
-
-The `--workers` option can be used to set the number of worker processes (defaults to 1)
-
-## ISWC2025 Benchmark Reproduction
-Instructions to reproduce the family benchmarks are in the folder alc_benchmarks in a separate README file. Instructions and required files to reproduce the results on the SML benchmarks can be found in the following repository.
-https://github.com/SAT-based-Concept-Learning/ALC-SAT-eval

@@ -1,0 +1,259 @@
+<?xml version="1.0"?> 
+ <rdf:RDF     xmlns="http://www.w3.org/2002/07/owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:shacl="http://www.w3.org/ns/shacl#"
+    xmlns:schema="http://schema.org/"
+    xmlns:schema1="http://yago-knowledge.org/schema#"
+>
+<owl:Ontology rdf:about="http://www.w3.org/2002/07/owl"/>
+<owl:Class rdf:about="http://yago-knowledge.org/resource/Female__u0028_gender_u0029__class"/>
+<owl:Class rdf:about="http://yago-knowledge.org/resource/Male_gender_class"/>
+<owl:ObjectProperty rdf:about="http://schema.org/children"/>
+<owl:ObjectProperty rdf:about="http://schema.org/gender"/>
+<owl:ObjectProperty rdf:about="http://schema.org/spouse"/>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_">
+    <rdf:type rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029__class"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Male_gender">
+    <rdf:type rdf:resource="http://yago-knowledge.org/resource/Male_gender_class"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Margaret_Fownes-Luttrell">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Thomas_Fownes_Luttrell"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Henry_Fownes_Luttrell__u0028_died_1780_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Áed_na_nGall">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Al_Jawhara_bint_Ibrahim_Al_Ibrahim">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Fahd_of_Saudi_Arabia"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Abdul_Aziz_bin_Fahd_Al_Saud"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Fahd_of_Saudi_Arabia">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Al_Jawhara_bint_Ibrahim_Al_Ibrahim"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Abdul_Aziz_bin_Fahd_Al_Saud"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Muhammad_bin_Fahd_Al_Saud"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Saud_bin_Fahd_Al_Saud"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Sultan_bin_Fahd_Al_Saud"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Faisal_bin_Fahd_Al_Saud__u0028_1945_u2013_1999_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Faisal_bin_Fahd_Al_Saud__u0028_1945_u2013_1999_u0029_">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Nawaf_bin_Faisal_Al_Saud"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Muhammad_bin_Fahd_Al_Saud">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Saud_bin_Fahd_Al_Saud">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Bahadur_Shah_Zafar">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Ulugh_Tahir"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Zeenat_Mahal"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Jawan_Bakht__u0028_born_1841_u0029_"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Mughal"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Dara_Bakht"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Shah_Abbas"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Farkhunda_Shah"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Khizr_Sultan"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Fath-ul-Mulk_Bahadur"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Sultan_bin_Fahd_Al_Saud">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Prince_Abo">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Ōe_no_Otondo"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Princess_Ito"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Ariwara_no_Narihira"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Ariwara_no_Yukihira"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Gottschalk__u0028_Obotrite_prince_u0029_">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Budivoj"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Sigrid_Svendsdatter"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Henry__u0028_Obotrite_prince_u0029_"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Henry__u0028_Obotrite_prince_u0029_">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Sigrid_Svendsdatter">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Gottschalk__u0028_Obotrite_prince_u0029_"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Henry__u0028_Obotrite_prince_u0029_"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Måns_Zelmerlöw">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Ciara_Janson"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Nawaf_bin_Faisal_Al_Saud">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Abdul_Aziz_bin_Fahd_Al_Saud">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mirza_Dara_Bakht">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mirza_Farkhunda_Shah">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mirza_Fath-ul-Mulk_Bahadur">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Abu_Bakht"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mirza_Jawan_Bakht__u0028_born_1841_u0029_">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mirza_Khizr_Sultan">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mirza_Mughal">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mirza_Shah_Abbas">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mirza_Ulugh_Tahir">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Zeenat_Mahal">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Bahadur_Shah_Zafar"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mirza_Jawan_Bakht__u0028_born_1841_u0029_"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mirza_Abu_Bakht">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Cathal_Crobhdearg_Ua_Conchobair">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Felim_O_u0027_Connor__u0028_d_u002E__1265_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Mór_Ní_Briain"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Aedh_Ua_Conchobair"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Felim_O_u0027_Connor__u0028_d_u002E__1265_u0029_">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Aedh_Muimhnech_Ó_Conchobair"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Áed_na_nGall"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mór_Ní_Briain">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Cathal_Crobhdearg_Ua_Conchobair"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Aedh_Ua_Conchobair"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Philip_the_Tetrarch">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Salome"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Princess_Ito">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Ariwara_no_Yukihira"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Ariwara_no_Narihira"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Prince_Abo"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/David_Janson">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Ciara_Janson"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Debbie_Arnold"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Debbie_Arnold">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/David_Janson"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Ciara_Janson"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/John_Challis"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/John_Challis">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Sabina_Franklyn"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Debbie_Arnold"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Francis_Fownes_Luttrell">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Herod_Antipas">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Phasa_u0027_el"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Herodias"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Herod_II">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Salome"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Herodias"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Budivoj">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Pribislav_of_Wagria"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Phasa_u0027_el">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Herod_Antipas"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Pribislav_of_Wagria">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Ōe_no_Otondo">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Ōe_no_Chisato"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Herodias">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Salome"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Herod_Antipas"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Herod_II"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Aristobulus_of_Chalcis">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Salome"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Salome">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Aristobulus_of_Chalcis"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Philip_the_Tetrarch"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Aedh_Muimhnech_Ó_Conchobair">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Aedh_Ua_Conchobair">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Ōe_no_Chisato">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Ariwara_no_Narihira">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Ariwara_no_Yukihira">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Ciara_Janson">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Måns_Zelmerlöw"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Sabina_Franklyn">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/John_Challis"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Henry_Fownes_Luttrell__u0028_1790_u2013_1867_u0029_">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Henry_Fownes_Luttrell__u0028_died_1780_u0029_">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Margaret_Fownes-Luttrell"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Thomas_Fownes_Luttrell"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Francis_Fownes_Luttrell"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/John_Fownes_Luttrell__u0028_1752_u2013_1816_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/John_Fownes_Luttrell__u0028_1752_u2013_1816_u0029_">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Henry_Fownes_Luttrell__u0028_1790_u2013_1867_u0029_"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Thomas_Fownes_Luttrell">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+</rdf:RDF>

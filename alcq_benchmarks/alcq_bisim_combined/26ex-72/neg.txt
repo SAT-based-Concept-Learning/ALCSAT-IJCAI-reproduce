@@ -1,0 +1,14 @@
+http://yago-knowledge.org/resource/Alphonse_Daudet
+http://yago-knowledge.org/resource/Hamad_bin_Isa_Al_Khalifa
+http://yago-knowledge.org/resource/Nicholas_Roerich
+http://yago-knowledge.org/resource/Jose_P_u002E__Laurel
+http://yago-knowledge.org/resource/Cyrus_McCormick
+http://yago-knowledge.org/resource/Alejandro_Bichir
+http://yago-knowledge.org/resource/Niall_mac_Cernaig_Sotal
+http://yago-knowledge.org/resource/Parakramabahu_VIII_of_Kotte
+http://yago-knowledge.org/resource/George_Barrington_u002C__5th_Viscount_Barrington
+http://yago-knowledge.org/resource/William_Wollaston
+http://yago-knowledge.org/resource/Chōsokabe_Kunichika
+http://yago-knowledge.org/resource/Charles_Cornwallis_u002C__4th_Baron_Cornwallis
+http://yago-knowledge.org/resource/Sir_Justinian_Isham_u002C__2nd_Baronet
+http://yago-knowledge.org/resource/Ecgberht_of_Kent

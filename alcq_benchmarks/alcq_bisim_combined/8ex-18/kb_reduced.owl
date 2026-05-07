@@ -1,0 +1,268 @@
+<?xml version="1.0"?> 
+ <rdf:RDF     xmlns="http://www.w3.org/2002/07/owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:shacl="http://www.w3.org/ns/shacl#"
+    xmlns:schema="http://schema.org/"
+    xmlns:schema1="http://yago-knowledge.org/schema#"
+>
+<owl:Ontology rdf:about="http://www.w3.org/2002/07/owl"/>
+<owl:Class rdf:about="http://yago-knowledge.org/resource/Female__u0028_gender_u0029__class"/>
+<owl:Class rdf:about="http://yago-knowledge.org/resource/Male_gender_class"/>
+<owl:ObjectProperty rdf:about="http://schema.org/children"/>
+<owl:ObjectProperty rdf:about="http://schema.org/gender"/>
+<owl:ObjectProperty rdf:about="http://schema.org/spouse"/>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_">
+    <rdf:type rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029__class"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Male_gender">
+    <rdf:type rdf:resource="http://yago-knowledge.org/resource/Male_gender_class"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Arthur_Lister">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Joseph_Jackson_Lister__u0028_naturalist_u0029_"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Gulielma_Lister"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Gulielma_Lister">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Elon_Musk">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Justine_Musk"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Talulah_Riley"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Joseph_Jackson_Lister__u0028_naturalist_u0029_">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Justine_Musk">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Elon_Musk"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Talulah_Riley">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Elon_Musk"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Christina_Rossetti">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Sarah_Zeid">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Zeid_bin_Ra_u0027_ad"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Camilla_Stoltenberg">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Erica_Packer">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/James_Packer"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/James_Packer">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Jodhi_Meares"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Erica_Packer"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Agnes_Syme_Lister">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Joseph_Lister"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Joseph_Lister">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Agnes_Syme_Lister"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Anson_Phelps_Stokes">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/James_Graham_Phelps_Stokes"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Anson_Phelps_Stokes__u0028_philanthropist_u0029_"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Isaac_Newton_Phelps_Stokes"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Anson_Phelps_Stokes__u0028_philanthropist_u0029_">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Olivia_Stokes_Hatch"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Anson_Phelps_Stokes__u0028_bishop_u0029_"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Isaac_Newton_Phelps_Stokes">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Edith_Minturn_Stokes"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/James_Graham_Phelps_Stokes">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Rose_Pastor_Stokes"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Anson_Phelps_Stokes__u0028_bishop_u0029_">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Olivia_Stokes_Hatch">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Mired_bin_Ra_u0027_ad">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Dina_Mired"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Dina_Mired">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Mired_bin_Ra_u0027_ad"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Lucy_Madox_Brown">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/William_Michael_Rossetti"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Majda_Ra_u0027_ad">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Nissa_bint_Ra_u0027_ad"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mired_bin_Ra_u0027_ad"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Ra_u0027_ad_bin_Zeid"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Zeid_bin_Ra_u0027_ad"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Nissa_bint_Ra_u0027_ad">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Zeid_bin_Ra_u0027_ad">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Sarah_Zeid"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Ra_u0027_ad_bin_Zeid">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Majda_Ra_u0027_ad"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Nissa_bint_Ra_u0027_ad"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Mired_bin_Ra_u0027_ad"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Zeid_bin_Ra_u0027_ad"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Ingrid_Schulerud">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Jens_Stoltenberg"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Lee_Phillip_Bell">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Bradley_Bell"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Lauralee_Bell"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/William_J_u002E__Bell"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/William_J_u002E__Bell">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Bradley_Bell"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Lauralee_Bell"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Lee_Phillip_Bell"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Jens_Stoltenberg">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Ingrid_Schulerud"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Rose_Pastor_Stokes">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/James_Graham_Phelps_Stokes"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Frances_Polidori">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Gabriele_Rossetti"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Maria_Francesca_Rossetti"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Dante_Gabriel_Rossetti"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Christina_Rossetti"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/William_Michael_Rossetti"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Maria_Francesca_Rossetti">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/William_Michael_Rossetti">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Lucy_Madox_Brown"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Gabriele_Rossetti">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Frances_Polidori"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Maria_Francesca_Rossetti"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Dante_Gabriel_Rossetti"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Christina_Rossetti"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/William_Michael_Rossetti"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Roslyn_Packer">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/James_Packer"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Gretel_Packer"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Kerry_Packer"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Joseph_Jackson_Lister">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Arthur_Lister"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Joseph_Lister"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Gretel_Packer">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Lauralee_Bell">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Kerry_Packer">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/James_Packer"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Gretel_Packer"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Roslyn_Packer"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Bradley_Bell">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Colleen_Bell"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Dante_Gabriel_Rossetti">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Elizabeth_Siddal"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Colleen_Bell">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Bradley_Bell"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Elizabeth_Siddal">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Dante_Gabriel_Rossetti"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Edith_Minturn_Stokes">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Isaac_Newton_Phelps_Stokes"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Jodhi_Meares">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/James_Packer"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Errol_Musk">
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Maye_Musk"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Elon_Musk"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Kimbal_Musk"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Tosca_Musk"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Kimbal_Musk">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Jen_Lewin"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Tosca_Musk">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Karin_Stoltenberg">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Nini_Stoltenberg"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Jens_Stoltenberg"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Camilla_Stoltenberg"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Thorvald_Stoltenberg"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Maye_Musk">
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Elon_Musk"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Errol_Musk"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Kimbal_Musk"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Tosca_Musk"/>
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Nini_Stoltenberg">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Thorvald_Stoltenberg">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Male_gender"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Nini_Stoltenberg"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Karin_Stoltenberg"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Jens_Stoltenberg"/>
+    <schema:children rdf:resource="http://yago-knowledge.org/resource/Camilla_Stoltenberg"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://yago-knowledge.org/resource/Jen_Lewin">
+    <schema:gender rdf:resource="http://yago-knowledge.org/resource/Female__u0028_gender_u0029_"/>
+    <schema:spouse rdf:resource="http://yago-knowledge.org/resource/Kimbal_Musk"/>
+</owl:NamedIndividual>
+</rdf:RDF>
