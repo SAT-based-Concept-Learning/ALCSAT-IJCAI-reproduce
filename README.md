@@ -14,7 +14,7 @@ The SML-Benchmarks can be obtained from <https://github.com/SmartDataAnalytics/S
 
 (row) TDL: ``` uv run -m ijcai-benchmarks.cross-validation-tdl <path to sml benchmarks repository folder> ```
 
-(row) Theorem 2: ``` uv run -m ijcai-benchmarks.bisim-extract <path to sml benchmarks repository folder> ```
+(row) Theorem 2: ``` uv run -m ijcai-benchmarks.cross-validation-bisim-extract <path to sml benchmarks repository folder> ```
 
 (row) Our Tool: ``` uv run -m ijcai-benchmarks.cross-validation-alcsat <path to sml benchmarks repository folder> ```
 
@@ -31,8 +31,7 @@ To reproduce results from Figure 1, run
 
 ``` uv run -m alc_benchmarks.alc_benchmark ```
 
-In each of the benchmarks in ```alcq_benchmarks/alcq_bisim_combined``` a file ```results.json``` will be created containing accuracies, f1 scores, concept sizes and concepts reported by the respective tools. In addition two files ```alcq_benchmarks/alcq_bisim_combined/data.csv``` and ```alcq_benchmarks/alcq_bisim_combined/data_avg.csv``` are created. The file ```alcq_benchmarks/alcq_bisim_combined/data_avg.csv``` contains the data points shown in Figure 1.
-
+In each of the benchmarks in ```alcq_benchmarks/alcq_bisim_combined``` a file ```results.json``` will be created containing accuracies, f1 scores, concept sizes and concepts reported by the respective tools. In addition two files ```alcq_benchmarks/alcq_bisim_combined/data.csv``` and ```alcq_benchmarks/alcq_bisim_combined/data_avg.csv``` are created. The file ```alcq_benchmarks/alcq_bisim_combined/data_avg.csv``` contains the data points shown in Figure 1, that is, average accuracies and f1 scores by number of examples obtained from the results in ```alcq_benchmarks/alcq_bisim_combined/data.csv```.
 
 ## Run
 For full instructions on how to run our implementation, run
