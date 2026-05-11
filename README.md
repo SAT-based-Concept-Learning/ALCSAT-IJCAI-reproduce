@@ -2,7 +2,7 @@ This repository contains our implementation of bounded fitting for the descripti
 
 ## Requirements
 - Installation of Python 3
-- uv package manager
+- uv package manager: `https://github.com/astral-sh/uv`
 
 
 ## SML-Benchmarks

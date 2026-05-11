@@ -72,13 +72,13 @@ def sml_benchmark_cross_validate(resultpath: str, sml_path):
             data = dict()
 
             p: list[str] = []
-            with open(pos_path, encoding="UTF-8") as file:
+            with open(pospath, encoding="UTF-8") as file:
                 for line in file.readlines():
                     ind = line.rstrip()
                     p.append(ind)
 
             n: list[str] = []
-            with open(neg_path, encoding="UTF-8") as file:
+            with open(negpath, encoding="UTF-8") as file:
                 for line in file.readlines():
                     ind = line.rstrip()
                     n.append(ind)
