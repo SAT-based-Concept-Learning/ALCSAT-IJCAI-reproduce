@@ -8,12 +8,14 @@ from ontolearn.knowledge_base import KnowledgeBase
 from spell.fitting import determine_relevant_symbols
 import sys
 from spell.structures import structure_from_owl
-from spell.fitting_alc import FittingALC
+from spell.fitting_alc import FittingALC, perfect_fitting
 from spell.preprocessing import ThresholdMethod
 import random
-from spell.instance import Instance, OP, ALCConcept
+from spell.instance import Instance, OP
 import numpy as np
 import os
+from ijcai_benchmarks.process_cross_validation_output import compute_and_print
+
 
 def chunks(lst: list[int], n: int):
     for i in range(0, len(lst), n):
@@ -41,7 +43,9 @@ def kfold(
         this_p = [p for j in range(folds) for p in p_chunks[j] if j != i]
         this_n = [n for j in range(folds) for n in n_chunks[j] if j != i]
 
-        concept = ALCConcept(OP.TOP, "", None, children=())
+        train_inst = Instance(inst.A, this_p, this_n, inst.sigma, inst.op, inst.max_q)
+
+        acc, size, concept = perfect_fitting(train_inst, tm)
 
         other_p = p_chunks[i]
         other_n = n_chunks[i]
@@ -87,7 +91,7 @@ def sml_benchmark_cross_validate(resultpath: str, tm: ThresholdMethod, sml_path)
                 exs_folder = '42'
             owlfile = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'data', f'{bench}.owl')
             pospath = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'lp', exs_folder, 'pos.txt')
-            negpath = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'lp', exs_folder, 'neg.txt')
+            negpath = os.path.join(sml_path, 'learningtasks', bench, 'owl', 'lp', exs_folder, 'neg.txt')  
 
             print("== Loading {}".format(owlfile))
             A = structure_from_owl(owlfile)
@@ -131,15 +135,18 @@ def sml_benchmark_cross_validate(resultpath: str, tm: ThresholdMethod, sml_path)
             )
             for fold, concept, acc, f1 in kfold(inst, 10, max_k=10, timeout=300, tm=tm):
                 _ = outfile.write(
-                    f"{bench}, {fold}, {acc}, {f1}, {concept.size()}, {concept.evo_size()}, {concept.to_dl_concept()} \n"
+                    f"{bench}, {fold}, {acc}, {f1}, {concept.size()}, {concept.evo_size()}, {concept.to_dl_concept().replace(',','')} \n"
                 )
                 outfile.flush()
 
 
+def run(sml_path):
+    results_path = "reproduce-table1-therorem2.txt"
+    sml_benchmark_cross_validate(results_path, ThresholdMethod.INTERVALS, sml_path)
+    compute_and_print(results_path)
+
 def main():
-    sml_benchmark_cross_validate(
-        "reproduce-table4-top.txt", ThresholdMethod.INTERVALS, sys.argv[1]
-    )
+    run(sys.argv[1])
 
 if __name__ == "__main__":
     main()

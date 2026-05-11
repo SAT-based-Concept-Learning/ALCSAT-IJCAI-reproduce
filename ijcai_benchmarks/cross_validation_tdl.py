@@ -16,6 +16,7 @@ from spell.instance import Instance, OP
 import numpy as np
 from alc_benchmarks.ontolearn_benchmark import owl_concept_size
 import os
+from ijcai_benchmarks.process_cross_validation_output import compute_and_print
 
 def size(concept) -> int:
     rd = ManchesterOWLSyntaxOWLObjectRenderer()
@@ -165,10 +166,13 @@ def sml_benchmark_cross_validate(resultpath: str, sml_path):
                 print(f"TDL Test Quality: {test_f1_tdl:.3f}", end="\t")
                 print(f"TDL Runtime: {rt_tdl:.3f}")
 
+def run(sml_path):
+    results_path = "reproduce-table1-tdl.txt"
+    sml_benchmark_cross_validate(results_path, sml_path)
+    compute_and_print(results_path)
 
 def main():
-    sml_benchmark_cross_validate("reproduce-table1-tdl.txt", sys.argv[1])
-
+    run(sys.argv[1])
 
 if __name__ == "__main__":
     main()

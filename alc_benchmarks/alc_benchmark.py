@@ -882,11 +882,13 @@ def combine_bisim_examples2(kb_path,dir_path, dest_dir, max_per_size = 5):
                     )
                     k+=1
 
-
-def main():
+def run_alcq_benchmarks():
     dir_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),"alcq_benchmarks", "alcq_bisim_combined")
     examples_from_bisim_run(dir_path)
-    alcq_benchmarks_to_csv(dir_path)    
+    alcq_benchmarks_to_csv(dir_path)
+
+def main():
+    run_alcq_benchmarks()
 
 if __name__ == "__main__":
     main()

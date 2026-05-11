@@ -6,8 +6,7 @@ from spell.fitting_alc import FittingALC
 import sys, os
 
 
-def main():
-    sml_path = sys.argv[1]
+def run(sml_path):    
     runs = 3
     benchmarks = ["mammographic", "suramin", "mutagenesis"]
     max_k = 8
@@ -71,6 +70,8 @@ def main():
                 outfile.flush()
                 print(f"Benchmark {benchmark}, Intervals {i} : {acc}, {t}s")
 
+def main():
+    run(sys.argv[1])
 
 if __name__ == "__main__":
     main()
