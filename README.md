@@ -11,7 +11,7 @@ To reproduce all results reported in the paper run
 
 ```uv run reproduce_all.py <path to sml benchmarks repository folder>```
 
-Note that this may take a long time to finish, likely multiple days. Therefore there are instructions to reproduce specific tables or rows of table 1 below.
+The contents of the files created in the process are explained below. Note that this may take a long time to finish, likely 1-2 days. Therefore there are instructions to reproduce specific tables or rows of table 1 below.
 
 ## SML-Benchmarks
 To reproduce results shown in Table 1 (or Table 4 in the appendix), run

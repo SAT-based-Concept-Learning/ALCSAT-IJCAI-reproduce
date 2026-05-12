@@ -82,8 +82,8 @@ def sml_benchmark_cross_validate(resultpath: str, tm: ThresholdMethod, sml_path)
             "mutagenesis",
             "nctrer",
             "premierleague",
-            "pyrimidine",
-            "suramin"
+            "pyrimidine"#,
+            #"suramin"
         ]:
             exs_folder = '1'
             if bench == "mutagenesis":
