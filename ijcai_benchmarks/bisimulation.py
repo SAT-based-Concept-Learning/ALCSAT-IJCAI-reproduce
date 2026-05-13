@@ -37,8 +37,7 @@ def sizes(A, P, N, max_k, ops, max_q):
 
     return size_before, size_after
 
-def main():
-    sml_path = sys.argv[1]
+def run(sml_path):    
     runs = 3
     benchmarks = ["mammographic", "hepatitis", "lymphography"]
     max_k = 8
@@ -127,6 +126,8 @@ def main():
                 outfile.flush()
                 print(f"Language {language} Benchmark {benchmark} : {two}s {tw}s")
 
+def main():
+    run(sys.argv[1])
 
 if __name__ == "__main__":
     main()
